@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
-export default function WelcomePage() {
+WelcomePage = function () {
   return (
     <section className="welcome-page">
       <header>
@@ -14,3 +15,5 @@ export default function WelcomePage() {
     </section>
   );
 }
+
+export default WelcomePage;

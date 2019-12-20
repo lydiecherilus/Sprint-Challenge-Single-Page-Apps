@@ -5,6 +5,7 @@ WelcomePage = function () {
   return (
     <section className="welcome-page">
       <header>
+        
         <h1>Welcome to the ultimate fan site!</h1>
         <img
           className="main-img"

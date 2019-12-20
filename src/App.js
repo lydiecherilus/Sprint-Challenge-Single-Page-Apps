@@ -1,8 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./components/Header.js";
-
 import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
 import Navigation from "./components/Navigation";
@@ -12,13 +11,8 @@ export default function App() {
   return (
     <main>
       <Header />
-      {/* <SearchForm /> */}
       <div>
         <Navigation />
-
-        {/* <Route exact path="/">
- <WelcomePage />
- </Route> */}
 
         <Route path="/CharacterList">
           <CharacterList />
@@ -28,7 +22,7 @@ export default function App() {
           <LocationsList />
         </Route>
       </div>
-
+      <SearchForm />
     </main>
   );
 }

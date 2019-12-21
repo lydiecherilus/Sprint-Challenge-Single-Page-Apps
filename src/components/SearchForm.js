@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import axios from "axios";
 
@@ -48,14 +48,15 @@ const SearchForm = props => {
                 {data.map(data => {
                     return (
                         <div
-                            className="character-list "
+                            className="character-list"
                             key={data._id}
                         >
-                            <h2>
+                            <h2 className="character-list-name">
                                 {data.name}
                             </h2>
 
-                            <h3 className="character_listtwo">
+                            <h3 className="character_list_name">
+                                {/* Gender: {data.gender} */}
                                 Gender: {data.gender}
                             </h3>
                         </div>

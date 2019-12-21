@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, Row } from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, CardImg, Row } from "reactstrap";
 
 
 const CharacterCard = props => {
@@ -13,7 +13,7 @@ const CharacterCard = props => {
             <CardTitle><h3>{props.character.name}</h3></CardTitle>
             <CardSubtitle> Name: {props.character.name}</CardSubtitle>
             <CardSubtitle> Status: {props.character.status}</CardSubtitle>
-            <CardSubtitle> Species: {props.character.species}</CardSubtitle>
+            <CardSubtitle> Spieces: {props.character.species}</CardSubtitle>
             <CardSubtitle> Gender: {props.character.gender}</CardSubtitle>
             <CardSubtitle> Location: {props.character.location.name}</CardSubtitle>
             <CardSubtitle> Origin: {props.character.origin.name}</CardSubtitle>

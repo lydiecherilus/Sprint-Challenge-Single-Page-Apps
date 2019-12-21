@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import axios from "axios";
 
+import { Card, CardBody, CardTitle, CardSubtitle, CardImg, Row } from "reactstrap";
+
 const SearchForm = props => {
 
     const [data, setData] = useState([]);
@@ -56,8 +58,11 @@ const SearchForm = props => {
                             </h2>
 
                             <h3 className="character_list_name">
-                                {/* Gender: {data.gender} */}
-                                Gender: {data.gender}
+                             
+                                <Card>
+                                    <CardImg src={data.image}></CardImg>
+                               
+                                </Card>
                             </h3>
                         </div>
                     );

@@ -36,4 +36,19 @@ main {
 
 header h1 {
   text-align: center;
+
 }
+
+  .nav-link {
+    color: rgb(148, 116, 120);
+  }
+
+
+  .nav-link:hover {
+    color: rgb(184, 40, 119);
+  }
+
+
+  .ui-center {
+    background-color:rgb(245, 225, 225);
+  }
